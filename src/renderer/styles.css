@@ -1,0 +1,110 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "~@blueprintjs/table/lib/css/table.css";
+@import "~@blueprintjs/select/lib/css/blueprint-select.css";
+@import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
+
+body {
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.grow {
+  flex-grow: 1;
+}
+
+.flex.f-jc-between {
+  justify-content: space-between;
+}
+
+.bp3-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  background-color: rgb(16, 107, 163);
+}
+
+.bp3-navbar .bp3-button.bp3-outlined,
+.bp3-navbar .bp3-button.bp3-outlined .bp3-icon > svg {
+  color: white;
+}
+
+.bp3-button-text {
+  text-align: center;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 10px 20px;
+  border-left: 1px solid lightgray;
+  background: #f2f2f2;
+}
+
+.table-container {
+  display: flex;
+  flex-grow: 1;
+  max-height: calc(100vh - 50px);
+  overflow: auto;
+}
+
+.generic-table {
+  width: 100%;
+  border-spacing: unset;
+}
+
+.generic-table th {
+  top: 0;
+  position: sticky;
+  background: #f2f2f2;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.generic-table tbody tr:hover {
+  background-color: rgba(16, 107, 163, 0.1);
+  cursor: pointer;
+}
+
+.generic-table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.generic-table td.center {
+  text-align: center;
+}
+
+.generic-table td.actions {
+  text-align: center;
+  width: 100px;
+}
+
+.ta-start {
+  text-align: start;
+}
+
+.fill-btn {
+  margin: 0 5px 5px 5px;
+  width: calc(100% - 10px);
+}
